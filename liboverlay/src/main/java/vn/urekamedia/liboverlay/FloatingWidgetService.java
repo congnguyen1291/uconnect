@@ -13,7 +13,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -31,6 +30,8 @@ import android.widget.LinearLayout;
 import android.widget.MediaController;
 import android.widget.RelativeLayout;
 
+import androidx.annotation.Nullable;
+
 import com.andremion.counterfab.CounterFab;
 import com.google.ads.interactivemedia.v3.api.AdsLoader;
 import com.google.ads.interactivemedia.v3.api.AdsManager;
@@ -47,7 +48,6 @@ import java.util.List;
 import vn.urekamedia.liboverlay.services.ApiCall;
 import vn.urekamedia.liboverlay.videoPlayer.VideoPlayer;
 
-import static vn.urekamedia.liboverlay.Utils.getSerialNumber;
 import static vn.urekamedia.liboverlay.Utils.getSerialNumber;
 
 public class FloatingWidgetService extends Service {

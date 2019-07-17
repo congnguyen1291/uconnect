@@ -31,8 +31,6 @@ public class CastApplication implements Cast.MessageReceivedCallback,
     private SessionManager mSessionManager;
     private SessionManagerListener<CastSession> mSessionManagerListener;
 
-    private MainActivity mActivity;
-
     private double mPosition; // content time in secs.
 
     private static final String NAMESPACE = "urn:x-cast:com.google.ads.interactivemedia.dai.cast";

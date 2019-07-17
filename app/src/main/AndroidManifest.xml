@@ -22,19 +22,25 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Ureka ads -->
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.google.ads.interactivemedia.v3.samples.videoplayerapp.CastOptionsProvider" />
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.google.ads.interactivemedia.v3.samples.videoplayerapp.CastOptionsProvider" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+        <service
+            android:name="vn.urekamedia.liboverlay.FloatingWidgetService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- end -->
     </application>
-
-    <meta-data
-        android:name="com.google.android.gms.ads.AD_MANAGER_APP"
-        android:value="true"/>
-    <service
-        android:name=".FloatingWidgetService"
-        android:enabled="true"
-        android:exported="false" />
-
 
 </manifest>

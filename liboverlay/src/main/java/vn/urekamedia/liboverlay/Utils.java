@@ -33,7 +33,6 @@ public class Utils {
 
     private SharedPreferences prefs;
 
-    private MainActivity mMainActivity;
     public static String bytesToHex(byte[] bytes) {
         StringBuilder sbuf = new StringBuilder();
         for(int idx=0; idx < bytes.length; idx++) {
